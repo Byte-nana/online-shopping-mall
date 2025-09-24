@@ -38,9 +38,21 @@ a {
 }
 .actions {
   display: flex;
+  align-items: center;
   gap: 1rem;
   font-size: 1.2rem;
   color: var(--color-text);
+  cursor: pointer;
+}
+.actions__input {
+  height: 28px;
+  padding: 0.2rem;
+  border: 2px solid var(--color-accent);
+  border-radius: 4px;
+}
+.actions__cart:hover,
+.actions__search:hover {
+  color: var(--color-accent);
 }
 .auth {
   display: flex;

@@ -5,6 +5,7 @@ import { RiShoppingCartLine } from 'react-icons/ri';
 
 export default function Nav() {
   let [items] = useState(['Home', 'Menu', 'About Us', 'Contact']);
+  let [search, setSearch] = useState(false);
 
   return (
     <header className={styles.header}>
@@ -19,8 +20,14 @@ export default function Nav() {
 
       <div className={styles.wrapper}>
         <div className={styles.actions}>
-          <FiSearch />
-          <RiShoppingCartLine />
+          {search && <input type='text' className={styles.actions__input} />}
+          <FiSearch
+            className={styles.actions__search}
+            onClick={() => {
+              setSearch(true);
+            }}
+          />
+          <RiShoppingCartLine className={styles.actions__cart} />
         </div>
         <div className={styles.auth}>
           <a className={styles.auth__sign} href='#'>
