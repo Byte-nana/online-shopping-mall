@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './Nav.module.css';
 import { FiSearch } from 'react-icons/fi';
 import { RiShoppingCartLine } from 'react-icons/ri';
+import Button from '../Button/Button';
 
 export default function Nav() {
   let [items] = useState(['Home', 'Menu', 'About Us', 'Contact']);
@@ -12,8 +13,10 @@ export default function Nav() {
       <h1 className={styles.logo}>VeggiePop</h1>
       <nav>
         <ul className={styles.menu}>
-          {items.map((item) => (
-            <li className={styles.items}>{item}</li>
+          {items.map((item, i) => (
+            <li className={styles.items} key={i}>
+              {item}
+            </li>
           ))}
         </ul>
       </nav>
@@ -24,18 +27,14 @@ export default function Nav() {
           <FiSearch
             className={styles.actions__search}
             onClick={() => {
-              setSearch(true);
+              setSearch((prev) => !prev);
             }}
           />
           <RiShoppingCartLine className={styles.actions__cart} />
         </div>
         <div className={styles.auth}>
-          <a className={styles.auth__sign} href='#'>
-            Sign Up
-          </a>
-          <a className={styles.auth__login} href='#'>
-            Login
-          </a>
+          <Button variant='ghost'>Sign Up</Button>
+          <Button variant='solid'>Login</Button>
         </div>
       </div>
     </header>

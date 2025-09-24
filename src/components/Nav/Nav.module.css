@@ -61,17 +61,3 @@ a {
   padding-left: 2rem;
   border-left: 2px solid var(--color-text-variant);
 }
-.auth__sign:hover {
-  color: var(--color-accent);
-}
-.auth__login {
-  padding: 0.3rem 2rem;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  background-color: var(--color-accent);
-  transition: all 300ms ease;
-}
-.auth__login:hover {
-  border: 2px solid var(--color-accent);
-  background-color: transparent;
-}
