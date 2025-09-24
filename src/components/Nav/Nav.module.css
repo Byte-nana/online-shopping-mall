@@ -1,0 +1,65 @@
+body {
+  color: var(--color-text);
+  font-size: 1rem;
+}
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+  white-space: nowrap;
+}
+.logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-weight: 400;
+}
+.items {
+  padding: 0 0.5rem;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+.items:hover {
+  border-bottom: 2px solid var(--color-accent);
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.actions {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-text);
+}
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 2rem;
+  border-left: 2px solid var(--color-text-variant);
+}
+.auth__sign:hover {
+  color: var(--color-accent);
+}
+.auth__login {
+  padding: 0.3rem 2rem;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background-color: var(--color-accent);
+  transition: all 300ms ease;
+}
+.auth__login:hover {
+  border: 2px solid var(--color-accent);
+  background-color: transparent;
+}
