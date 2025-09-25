@@ -1,8 +1,20 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import Button from './components/Button/Button.jsx';
 import Nav from './components/Nav/Nav.jsx';
+import Products from './components/Products/Products.jsx';
 
 function App() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch('/data/products.json')
+      .then((res) => res.json())
+      .then((data) => setProducts(data))
+      .catch((err) => console.error(`${err}: Failed to fetch products!`))
+      .finally;
+  }, []);
+
   return (
     <>
       <Nav />
@@ -17,6 +29,9 @@ function App() {
         </p>
         <Button variant='solid'>Make your bowl</Button>
       </div>
+      <Products />
+      <Products />
+      <Products />
     </>
   );
 }

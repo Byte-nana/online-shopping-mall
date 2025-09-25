@@ -1,0 +1,26 @@
+[
+  {
+    "id": "salad-01",
+    "name": "Caprese Fresh Bowl",
+    "price": "£6.99",
+    "image": "./image/salad-01.png",
+    "description": "A refreshing Italian-inspired mix of crisp spinach, cherry tomatoes, creamy mozzarella balls, and fresh basil. Served with a balsamic vinaigrette on the side for the perfect finishing touch.",
+    "allergen": "Contains milk (mozzarella). May contain traces of nuts (produced in a facility handling nuts)."
+  },
+  {
+    "id": "salad-02",
+    "name": "Classic Caesar Fresh Bowl",
+    "price": "£7.49",
+    "image": "./image/salad-02.png",
+    "description": "A timeless favourite made with crunchy romaine lettuce, grilled chicken breast, golden croutons, and parmesan cheese. Comes with a creamy Caesar dressing to tie it all together.",
+    "allergen": "Contains gluten (croutons), milk (parmesan, dressing), egg (dressing)."
+  },
+  {
+    "id": "salad-03",
+    "name": "Pecan Chicken Fresh Bowl",
+    "price": "£7.99",
+    "image": "./image/salad-03.png",
+    "description": "A hearty and flavourful salad featuring baby spinach, grilled chicken, sweetcorn, tangy blue cheese, and toasted pecans. Served with ranch dressing for a rich, savoury bite.",
+    "allergen": "Contains milk (blue cheese, dressing), nuts (pecans)."
+  }
+]
